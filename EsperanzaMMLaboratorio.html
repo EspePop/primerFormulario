@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="ES">
+    <head>
+        <title>EsperanzaMM_Evaluacion_Nivel2.</title>
+
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" href="EsperanzaMMLaboratorio.css" type="text/css"/>
+
+    </head>
+
+    <body>
+        <form action="./procesaFormulario.php" name="telefónica">
+        <h1>Formulario Información Alta Telefónica</h1>
+
+        <fieldset class="fieldset">
+            <legend class="lengend">Datos Personales</legend>
+
+            <label for="Nombre">Nombre:
+                <input type="text" id="Nombre" class="yellow" maxlength="30"/>
+            </label>
+            
+            <br/>
+
+            <label for="Apellidos">Apellidos:
+                <input type="text" id="Apellidos" class="yellow" maxlength="60"/>
+            </label>
+            
+            <br/>
+
+            <label for="Dirección">Dirección: 
+                <input type="text" id="Dirección" class="yellow" maxlength="60"/>
+            </label>
+            
+            <br/>
+
+            <label for="cpostal">Codigo Postal:
+                <input type="text" id="cpostal" class="yellow" pattern="[0-9]{5}" maxlength="5" size="5"/>
+            </label>
+
+            <br/>
+
+            <label for="Localidad">Localidad:
+                <input type="text" id="Localidad" class="yellow"/>
+            </label>
+        </fieldset>
+
+        <br/>
+
+        <fieldset class="fieldset">
+            <legend class="legend">Tipo de Contratación</legend>
+
+            <input type="radio" name="Contrato" value="0" checked="checked"/>Nueva Contratación
+            <input type="radio" name="Contrato" value="1"/>&nbsp;&nbsp;Portabilidad
+            <input type="radio" name="Contrato" value="2"/>&nbsp;&nbsp;Cambio de Contrato
+
+            <br/><br/>
+
+            <label for="CompañiaActual">Elija la compañía actual:
+                <select id="CompañiaActual">
+                    <option value="1">Movistar</option>
+                    <option value="2">Orange</option>
+                    <option value="3">Vodafone</option>
+                    <option value="4">Yoigo</option>
+                    <option value="5">No tengo ninguna compañía</option>
+                </select>                
+            </label>
+
+            <label for="portabilidad">&nbsp;&nbsp;&nbsp;En caso de portabilidad, elija una compañía:
+                <select id="portabilidad">
+                    <option value="1">Movistar</option>
+                    <option value="2">Orange</option>
+                    <option value="3">Vodafone</option>
+                    <option value="4">Yoigo</option>                                    
+                </select>  
+            </label>
+        </fieldset>
+
+        <br/>
+
+        <fieldset class="fieldset"> 
+            <legend class="lengend">Datos Bancarios</legend>
+
+            <label for="Pais">País:
+                <input type="text" id="Pais" class="yellow" placeholder="ES" disabled="disabled"/>(sólo válido ES)
+            </label>
+
+             <br/>
+
+            <label for="IBAN">Control IBAN: 
+                <input type="text" id="IBAN" class="yellow" placeholder="XX" pattern="[0-9]{2}" maxlength="2"/>(dos dígitos)
+            </label>
+
+             <br/>
+
+            <label for="Entidad">Entidad:
+                 <input type="text" id="Entidad" class="yellow" placeholder="XXXX" pattern="[0-9]{4}" maxlength="4"/>(cuatro dígitos)
+            </label>
+
+             <br/>
+
+            <label for="Sucursal">Sucursal:
+                 <input type="text" id="Sucursal" class="yellow" placeholder="XXXX" pattern="[0-9]{4}" maxlength="4"/>(cuatro dígitos)
+            </label>
+
+             <br/>
+
+            <label for="DC"> DC:
+                <input type="text" id="DC" class="yellow" placeholder="XX" pattern="[0-9]{2}" maxlength="2"/>(dos dígitos)
+            </label>
+
+             <br/>
+
+            <label for="Cuenta">Cuenta:
+                <input type="text" id="Cuenta" class="yellow" placeholder="XXXXXXXXXX" pattern="[0-9]{10}" maxlength="10"/>(diez dígitos)
+            </label>
+        </fieldset>
+
+        <br/>
+
+        <fieldset class="fieldset"> 
+            <legend class="lengend">Datos Estadísticos - ¿Cómo nos conoció?</legend>
+
+            <input type="checkbox" name="conocimiento" value="0"/>A través de la TV<br/>
+            <input type="checkbox" name="conocimiento" value="1"/>A través de la Radio<br/>
+            <input type="checkbox" name="conocimiento" value="2"/>A través de Internet<br/>
+            <input type="checkbox" name="conocimiento" value="3"/>Otros<br/>
+
+            <br/>
+
+            <input type="range" id="valoracion" min="1" max="5"/>Valoración [1-5]<br/>
+
+            <br/>
+
+            Fecha de la encuesta:&nbsp;<input type="date" id="fecha" value="2019-01-01"/>Valoración [1-5]
+
+        </fieldset>
+
+        <input type="submit" value="Enviar datos"/>&nbsp; 
+        <input type="reset" value="Borrar datos"/>
+
+        <br>
+
+        <button type="button" onclick="puntuar()">Mostrar<br/>Valoración</button>&nbsp;
+        <button type="button" onclick="cuentaBancaria()">Mostrar<br/>Cuenta </button>&nbsp;
+        <button type="button" onclick="diaSemana()">Mostrar Día<br/>Semana</button>
+
+        </form>
+
+        <script src="EsperanzaMMLaboratorio.js"></script>
+    </body>
+</html>
