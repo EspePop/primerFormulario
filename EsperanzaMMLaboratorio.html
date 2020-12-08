@@ -4,18 +4,22 @@
     <head>
         <title>EsperanzaMM_Evaluacion_Nivel2.</title>
 
-        <meta charset="utf-8">
+        <meta charset="utf-8"/>
 
         <link rel="stylesheet" href="EsperanzaMMLaboratorio.css" type="text/css"/>
 
     </head>
 
     <body>
+        
+        <main>
+            
         <form action="./procesaFormulario.php" name="telefónica">
+            
         <h1>Formulario Información Alta Telefónica</h1>
 
         <fieldset class="fieldset">
-            <legend class="lengend">Datos Personales</legend>
+            <legend>Datos Personales</legend>
 
             <label for="Nombre">Nombre:
                 <input type="text" id="Nombre" class="yellow" maxlength="30"/>
@@ -49,7 +53,7 @@
         <br/>
 
         <fieldset class="fieldset">
-            <legend class="legend">Tipo de Contratación</legend>
+            <legend>Tipo de Contratación</legend>
 
             <input type="radio" name="Contrato" value="0" checked="checked"/>Nueva Contratación
             <input type="radio" name="Contrato" value="1"/>&nbsp;&nbsp;Portabilidad
@@ -80,7 +84,7 @@
         <br/>
 
         <fieldset class="fieldset"> 
-            <legend class="lengend">Datos Bancarios</legend>
+            <legend>Datos Bancarios</legend>
 
             <label for="Pais">País:
                 <input type="text" id="Pais" class="yellow" placeholder="ES" disabled="disabled"/>(sólo válido ES)
@@ -120,7 +124,7 @@
         <br/>
 
         <fieldset class="fieldset"> 
-            <legend class="lengend">Datos Estadísticos - ¿Cómo nos conoció?</legend>
+            <legend>Datos Estadísticos - ¿Cómo nos conoció?</legend>
 
             <input type="checkbox" name="conocimiento" value="0"/>A través de la TV<br/>
             <input type="checkbox" name="conocimiento" value="1"/>A través de la Radio<br/>
@@ -147,7 +151,10 @@
         <button type="button" onclick="diaSemana()">Mostrar Día<br/>Semana</button>
 
         </form>
+        
+        </main>
 
         <script src="EsperanzaMMLaboratorio.js"></script>
+        
     </body>
 </html>
