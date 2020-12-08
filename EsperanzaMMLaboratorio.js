@@ -32,5 +32,5 @@
          let miDia = new Date(date); 
          dia = semana[miDia.getUTCDay()-1];
         }
-      alert("La fecha seleccionada en el elemento fecha es un " + dia);
+        alert("La fecha seleccionada en el elemento fecha es un " + dia);
       }
