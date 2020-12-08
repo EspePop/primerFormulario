@@ -1,27 +1,22 @@
-h1
-{
+h1 {
     color: blue;
     text-align: center;
     text-shadow: 3px 3px yellow;
 }
 
-fieldset
-{
+fieldset {
     background-color: cyan;
 }
 
-legend
-{
+legend {
     background-color: red;
     color: white;
 }
 
-button
-{
+button {
     width: 100px;
 }
 
-.yellow
-{
+.yellow {
     background-color: yellow;
 }
