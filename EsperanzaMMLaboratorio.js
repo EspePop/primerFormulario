@@ -25,12 +25,10 @@
       let dia
       let date = document.getElementById("fecha").value;
      
-        if (date === "2019-01-01")
-        {      
+        if (date === "2019-01-01"){      
            dia = "Martes";
         } 
-        else
-        {
+        else {
          let miDia = new Date(date); 
          dia = semana[miDia.getUTCDay()-1];
         }
