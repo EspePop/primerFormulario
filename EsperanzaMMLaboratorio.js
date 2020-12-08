@@ -2,7 +2,7 @@
 
    function puntuar(){
 
-    var punt = document.getElementById("valoracion").value;
+    var punt = document.getElementById("valuation").value;
 
        alert("Has valorado con " + punt + " puntos");
    }
@@ -23,7 +23,7 @@
 
       const semana = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"];
       let dia
-      let date = document.getElementById("fecha").value;
+      let date = document.getElementById("survey-date").value;
      
         if (date === "2019-01-01")
         {      

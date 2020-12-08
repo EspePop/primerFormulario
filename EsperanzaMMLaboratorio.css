@@ -1,27 +1,22 @@
-h1
-{
-    color: blue;
-    text-align: center;
-    text-shadow: 3px 3px yellow;
+h1 {
+  color: blue;
+  text-align: center;
+  text-shadow: 3px 3px yellow;
 }
 
-fieldset
-{
-    background-color: cyan;
+fieldset {
+  background-color: cyan;
 }
 
-legend
-{
-    background-color: red;
-    color: white;
+legend {
+  background-color: red;
+  color: white;
 }
 
-button
-{
-    width: 100px;
+button {
+  width: 100px;
 }
 
-.yellow
-{
-    background-color: yellow;
+.bckg-yellow {
+  background-color: yellow;
 }

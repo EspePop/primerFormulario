@@ -11,142 +11,144 @@
     </head>
 
     <body>
-        <form action="./procesaFormulario.php" name="telefónica">
-        <h1>Formulario Información Alta Telefónica</h1>
+        <main>
+            <h1>Formulario Información Alta Telefónica</h1>
 
-        <fieldset class="fieldset">
-            <legend class="lengend">Datos Personales</legend>
+            <form action="./procesaFormulario.php" name="telephone-form">
 
-            <label for="Nombre">Nombre:
-                <input type="text" id="Nombre" class="yellow" maxlength="30"/>
-            </label>
-            
-            <br/>
+                <fieldset class="fieldset">
+                    <legend>Datos Personales</legend>
 
-            <label for="Apellidos">Apellidos:
-                <input type="text" id="Apellidos" class="yellow" maxlength="60"/>
-            </label>
-            
-            <br/>
+                    <label for="name">Nombre:
+                        <input type="text" id="name" class="bckg-yellow" maxlength="30"/>
+                    </label>
+                    
+                    <br/>
 
-            <label for="Dirección">Dirección: 
-                <input type="text" id="Dirección" class="yellow" maxlength="60"/>
-            </label>
-            
-            <br/>
+                    <label for="surname">Apellidos:
+                        <input type="text" id="surname" class="bckg-yellow" maxlength="60"/>
+                    </label>
+                    
+                    <br/>
 
-            <label for="cpostal">Codigo Postal:
-                <input type="text" id="cpostal" class="yellow" pattern="[0-9]{5}" maxlength="5" size="5"/>
-            </label>
+                    <label for="address">Dirección: 
+                        <input type="text" id="address" class="bckg-yellow" maxlength="60"/>
+                    </label>
+                    
+                    <br/>
 
-            <br/>
+                    <label for="postal-code">Codigo Postal:
+                        <input type="text" id="postal-code" class="bckg-yellow" pattern="[0-9]{5}" maxlength="5" size="5"/>
+                    </label>
 
-            <label for="Localidad">Localidad:
-                <input type="text" id="Localidad" class="yellow"/>
-            </label>
-        </fieldset>
+                    <br/>
 
-        <br/>
+                    <label for="city">Localidad:
+                        <input type="text" id="city" class="bckg-yellow"/>
+                    </label>
+                </fieldset>
 
-        <fieldset class="fieldset">
-            <legend class="legend">Tipo de Contratación</legend>
+                <br/>
 
-            <input type="radio" name="Contrato" value="0" checked="checked"/>Nueva Contratación
-            <input type="radio" name="Contrato" value="1"/>&nbsp;&nbsp;Portabilidad
-            <input type="radio" name="Contrato" value="2"/>&nbsp;&nbsp;Cambio de Contrato
+                <fieldset class="fieldset">
+                    <legend>Tipo de Contratación</legend>
 
-            <br/><br/>
+                    <input type="radio" name="contract" value="0" checked="checked"/>Nueva Contratación
+                    <input type="radio" name="contract" value="1"/>&nbsp;&nbsp;Portabilidad
+                    <input type="radio" name="contract" value="2"/>&nbsp;&nbsp;Cambio de Contrato
 
-            <label for="CompañiaActual">Elija la compañía actual:
-                <select id="CompañiaActual">
-                    <option value="1">Movistar</option>
-                    <option value="2">Orange</option>
-                    <option value="3">Vodafone</option>
-                    <option value="4">Yoigo</option>
-                    <option value="5">No tengo ninguna compañía</option>
-                </select>                
-            </label>
+                    <br/><br/>
 
-            <label for="portabilidad">&nbsp;&nbsp;&nbsp;En caso de portabilidad, elija una compañía:
-                <select id="portabilidad">
-                    <option value="1">Movistar</option>
-                    <option value="2">Orange</option>
-                    <option value="3">Vodafone</option>
-                    <option value="4">Yoigo</option>                                    
-                </select>  
-            </label>
-        </fieldset>
+                    <label for="current-company">Elija la compañía actual:
+                        <select id="current-company">
+                            <option value="1">Movistar</option>
+                            <option value="2">Orange</option>
+                            <option value="3">Vodafone</option>
+                            <option value="4">Yoigo</option>
+                            <option value="5">No tengo ninguna compañía</option>
+                        </select>                
+                    </label>
 
-        <br/>
+                    <label for="new-company">&nbsp;&nbsp;&nbsp;En caso de portabilidad, elija una compañía:
+                        <select id="new-company">
+                            <option value="1">Movistar</option>
+                            <option value="2">Orange</option>
+                            <option value="3">Vodafone</option>
+                            <option value="4">Yoigo</option>                                    
+                        </select>  
+                    </label>
+                </fieldset>
 
-        <fieldset class="fieldset"> 
-            <legend class="lengend">Datos Bancarios</legend>
+                <br/>
 
-            <label for="Pais">País:
-                <input type="text" id="Pais" class="yellow" placeholder="ES" disabled="disabled"/>(sólo válido ES)
-            </label>
+                <fieldset class="fieldset"> 
+                    <legend>Datos Bancarios</legend>
 
-             <br/>
+                    <label for="country">País:
+                        <input type="text" id="country" class="bckg-yellow" placeholder="ES" disabled="disabled"/>(sólo válido ES)
+                    </label>
 
-            <label for="IBAN">Control IBAN: 
-                <input type="text" id="IBAN" class="yellow" placeholder="XX" pattern="[0-9]{2}" maxlength="2"/>(dos dígitos)
-            </label>
+                    <br/>
 
-             <br/>
+                    <label for="IBAN">Control IBAN: 
+                        <input type="text" id="IBAN" class="bckg-yellow" placeholder="XX" pattern="[0-9]{2}" maxlength="2"/>(dos dígitos)
+                    </label>
 
-            <label for="Entidad">Entidad:
-                 <input type="text" id="Entidad" class="yellow" placeholder="XXXX" pattern="[0-9]{4}" maxlength="4"/>(cuatro dígitos)
-            </label>
+                    <br/>
 
-             <br/>
+                    <label for="entity">Entidad:
+                        <input type="text" id="entity" class="bckg-yellow" placeholder="XXXX" pattern="[0-9]{4}" maxlength="4"/>(cuatro dígitos)
+                    </label>
 
-            <label for="Sucursal">Sucursal:
-                 <input type="text" id="Sucursal" class="yellow" placeholder="XXXX" pattern="[0-9]{4}" maxlength="4"/>(cuatro dígitos)
-            </label>
+                    <br/>
 
-             <br/>
+                    <label for="branch">Sucursal:
+                        <input type="text" id="branch" class="bckg-yellow" placeholder="XXXX" pattern="[0-9]{4}" maxlength="4"/>(cuatro dígitos)
+                    </label>
 
-            <label for="DC"> DC:
-                <input type="text" id="DC" class="yellow" placeholder="XX" pattern="[0-9]{2}" maxlength="2"/>(dos dígitos)
-            </label>
+                    <br/>
 
-             <br/>
+                    <label for="district"> DC:
+                        <input type="text" id="district" class="bckg-yellow" placeholder="XX" pattern="[0-9]{2}" maxlength="2"/>(dos dígitos)
+                    </label>
 
-            <label for="Cuenta">Cuenta:
-                <input type="text" id="Cuenta" class="yellow" placeholder="XXXXXXXXXX" pattern="[0-9]{10}" maxlength="10"/>(diez dígitos)
-            </label>
-        </fieldset>
+                    <br/>
 
-        <br/>
+                    <label for="account">Cuenta:
+                        <input type="text" id="account" class="bckg-yellow" placeholder="XXXXXXXXXX" pattern="[0-9]{10}" maxlength="10"/>(diez dígitos)
+                    </label>
+                </fieldset>
 
-        <fieldset class="fieldset"> 
-            <legend class="lengend">Datos Estadísticos - ¿Cómo nos conoció?</legend>
+                <br/>
 
-            <input type="checkbox" name="conocimiento" value="0"/>A través de la TV<br/>
-            <input type="checkbox" name="conocimiento" value="1"/>A través de la Radio<br/>
-            <input type="checkbox" name="conocimiento" value="2"/>A través de Internet<br/>
-            <input type="checkbox" name="conocimiento" value="3"/>Otros<br/>
+                <fieldset class="fieldset"> 
+                    <legend>Datos Estadísticos - ¿Cómo nos conoció?</legend>
 
-            <br/>
+                    <input type="checkbox" name="referal" value="0"/>A través de la TV<br/>
+                    <input type="checkbox" name="referal" value="1"/>A través de la Radio<br/>
+                    <input type="checkbox" name="referal" value="2"/>A través de Internet<br/>
+                    <input type="checkbox" name="referal" value="3"/>Otros<br/>
 
-            <input type="range" id="valoracion" min="1" max="5"/>Valoración [1-5]<br/>
+                    <br/>
 
-            <br/>
+                    <input type="range" id="valuation" min="1" max="5"/>Valoración [1-5]<br/>
 
-            Fecha de la encuesta:&nbsp;<input type="date" id="fecha" value="2019-01-01"/>Valoración [1-5]
+                    <br/>
 
-        </fieldset>
+                    Fecha de la encuesta:&nbsp;<input type="date" id="survey-date" value="2019-01-01"/>Valoración [1-5]
 
-        <input type="submit" value="Enviar datos"/>&nbsp; 
-        <input type="reset" value="Borrar datos"/>
+                </fieldset>
 
-        <br>
+                <input type="submit" value="Enviar datos"/>&nbsp; 
+                <input type="reset" value="Borrar datos"/>
 
-        <button type="button" onclick="puntuar()">Mostrar<br/>Valoración</button>&nbsp;
-        <button type="button" onclick="cuentaBancaria()">Mostrar<br/>Cuenta </button>&nbsp;
-        <button type="button" onclick="diaSemana()">Mostrar Día<br/>Semana</button>
+                <br>
 
-        </form>
+                <button type="button" onclick="puntuar()">Mostrar<br/>Valoración</button>&nbsp;
+                <button type="button" onclick="cuentaBancaria()">Mostrar<br/>Cuenta </button>&nbsp;
+                <button type="button" onclick="diaSemana()">Mostrar Día<br/>Semana</button>
+            </form>
+        </main>
 
         <script src="EsperanzaMMLaboratorio.js"></script>
     </body>
