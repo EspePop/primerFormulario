@@ -6,6 +6,10 @@ h1 {
 
 fieldset {
     background-color: cyan;
+    border-color: #BDBDBD;
+    border-width: 1px;
+    border-radius: 5px;
+    border-style: solid;
 }
 
 legend {
@@ -15,8 +19,23 @@ legend {
 
 button {
     width: 100px;
+    background-color: #F5A9BC;
+    border-radius: 5px;
 }
 
 .yellow {
     background-color: yellow;
+    border-radius: 5px;
+}
+
+.slider:focus {
+    outline: none;
+}
+
+
+.info {
+    background-color: #BDBDBD;
+    border-color: gray;
+    border-width: thin;
+    border-style: solid;
 }
